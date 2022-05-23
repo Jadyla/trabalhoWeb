@@ -5,10 +5,25 @@
 }
 
 .nav-link{
-    color: #213849;
+    color: rgb(91, 91, 91);
 }
 
 .nav-link:hover{
     transition: 0.2s;
-    color: #EC6433;
+    color: rgb(185, 58, 58);
+}
+
+.imagem_inicial{
+    width: 32%;
+    height: 32%;
+    border-radius: 0 5% 0 5%;
+}
+
+.logo_e_imagens{
+    margin: 0px auto;
+}
+
+.dropdown-item:hover{
+    color: white;
+    background-color: rgb(185, 58, 58);
 }
