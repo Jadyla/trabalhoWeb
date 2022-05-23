@@ -1,0 +1,14 @@
+@charset "UTF-8";
+
+.navbar{
+    background-color: white;
+}
+
+.nav-link{
+    color: #213849;
+}
+
+.nav-link:hover{
+    transition: 0.2s;
+    color: #EC6433;
+}
