@@ -1,29 +1,107 @@
 @charset "UTF-8";
 
 .navbar{
-    background-color: white;
+    background-color: rgb(185, 58, 58);
 }
 
 .nav-link{
-    color: rgb(91, 91, 91);
+    color: white;
 }
 
 .nav-link:hover{
-    transition: 0.2s;
-    color: rgb(185, 58, 58);
+    color: white;
+    transform: scale(1.04, 1.04);
 }
 
 .imagem_inicial{
-    width: 32%;
-    height: 32%;
+    width: 45%;
     border-radius: 0 5% 0 5%;
+    float: right;
+    margin-right: 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
-.logo_e_imagens{
-    margin: 0px auto;
+.imagem_inicial:hover{
+    transform: scale(1.02, 1.02);
+    transition-duration: 500ms;
 }
 
 .dropdown-item:hover{
     color: white;
     background-color: rgb(185, 58, 58);
+}
+
+section{
+    margin-top: 5.5%;
+}
+
+.logo_e_imagens{
+    display: flex;
+}
+
+.bem-vindo{
+    padding-right: 20px;
+}
+
+.logo{
+    width: 70%;
+    margin-bottom: 5%;
+}
+
+.titulo{
+    font-size: 60px;
+}
+
+.subtitulo{
+    font-size: 25px;
+}
+
+.secao2{
+    margin-top: 4.5%;
+    color: rgb(245, 245, 245);
+}
+
+.imagem_sobre{
+    width: 95%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    border-radius: 0 5% 0 5%;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+}
+
+.imagem_sobre:hover{
+    transform: scale(1.02, 1.02);
+    transition-duration: 500ms;
+}
+
+footer{
+    color:brown;
+    text-align: center;
+    padding-top: 3%;
+    padding-bottom: 3%;
+    margin-top: 2%;
+}
+
+.sobre{
+    padding-right: 20px;
+}
+
+.texto{
+    font-size: 20px;
+}
+
+.botao{
+    font-weight: 600;
+    padding: 2% 5%;
+    background-color: rgb(113, 27, 27);
+    text-decoration: none;
+    border-radius: 20px;
+    color: white;
+}
+
+.botao:hover{
+    text-decoration: none;
+    color:brown;
+    background-color: white;
+    transition-duration: 500ms;
 }
