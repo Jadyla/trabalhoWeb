@@ -1,5 +1,9 @@
 @charset "UTF-8";
 
+body{
+    background-image: url("../img/textura.jpg");
+}
+
 .navbar{
     background-color: rgb(185, 58, 58);
 }
@@ -77,11 +81,9 @@ section{
 footer{
     color:brown;
     text-align: center;
-    padding-top: 3%;
-    padding-bottom: 3%;
+    padding: 2.5% 20% 2.5% 10%;
     margin-top: 2%;
-    padding-left: 10%;
-    padding-right: 20%;
+    background-color: white;
 }
 
 .sobre{
@@ -130,6 +132,30 @@ footer{
     margin-bottom: -0.3%;
 }
 
+.botao_claro{
+    background-color:brown;
+    color: white;
+    font-weight: 600;
+    padding: 2% 5%;
+    text-decoration: none;
+    border-radius: 20px;
+}
+
+.botao_claro:hover{
+    background-color: white;
+    color: brown;
+    text-decoration: none;
+    transition-duration: 500ms;
+}
+
+.topo{
+    display: flex;
+    font-size: 35px;
+    margin-top: -3%;
+    font-weight: 500;
+}
+
+
 @media only screen and (max-width: 991px){
     .logo_e_imagens{
         display: inline;
@@ -141,6 +167,32 @@ footer{
 
     .titulo{
         margin-top: -10%;
+        margin-left: 5%;
+    }
+
+    .subtitulo{
+        margin-left: 5%;
+    }
+
+    .botao{
+        margin-left: 5%;
+    }
+
+    .botao_claro{
+        margin-left: 5%;
+    }
+
+    .imagem_inicial{
+        margin-left: 5%;
+        margin-right: 0;
+    }
+
+    .imagem_sobre{
+        margin-left: 5%;
+    }
+
+    .texto{
+        margin-left: 5%;
     }
 
     .secao1{
