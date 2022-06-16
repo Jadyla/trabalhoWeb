@@ -1,0 +1,13 @@
+#formatForm{
+    margin-left: 13em;
+}
+
+.botoes{
+    text-align: center;
+    display: flex;
+    justify-content: right;
+}
+
+#btnCadastro{
+    margin-right: 10px;
+}

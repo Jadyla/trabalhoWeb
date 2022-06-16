@@ -1,0 +1,22 @@
+.cars{
+    margin-left: 2em;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.cars img{
+    width: 400px;
+}
+ 
+.descricao{
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+} 
+
+.btn-primary, .btn-success{
+    margin-right: 1em;
+}
