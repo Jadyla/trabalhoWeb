@@ -1,25 +1,46 @@
 // Armazenar os dados no LocalStorage
-
-salvarLocalStorage()
+salvarLocalStorage();
 
 function salvarLocalStorage() {
-    var marca = document.getElementById('inputMarca');
-    var modelo = document.getElementById('inputModelo');
-    var ano = document.getElementById('inputAno');
-    var valor = document.getElementById('inputValor');
-    var foto = document.getElementById('inputFoto');
-    var cor = document.getElementById('inputCor');
-    var descricao = document.getElementById('imputDescricao');
+  let marca = document.getElementById('inputMarca');
+  let modelo = document.getElementById('inputModelo');
+  let ano = document.getElementById('inputAno');
+  let valor = document.getElementById('inputValor');
+  let foto = document.getElementById('inputFoto');
+  let cor = document.getElementById('inputCor');
+  let descricao = document.getElementById('imputDescricao');
+
+  // localStorage.Lista = [
+    //   `marca = ${marca.value}`,
+    //   `modelo = ${modelo.value}`,
+    //   `ano = ${ano.value}`,
+  //   `valor = ${valor.value}`,
+  //   `foto = ${foto.value}`,
+  //   `cor = ${cor.value}`,
+  //   `descricao = ${descricao.value}`
+  // ]
+
+  document.getElementById('btnCadastro').addEventListener('click', function () {
+    localStorage.marca = marca.value;
+    localStorage.modelo = modelo.value;
+    localStorage.ano = ano.value;
+    localStorage.valor = valor.value;
+    localStorage.foto = foto.value;
+    localStorage.cor = cor.value;
+    localStorage.descricao = descricao.value;
+    // localStorage.Lista  = Lista.value;
+  });
   
-    document.getElementById('btnCadastro').addEventListener('click', function () {
-      localStorage.marca = marca.value;
-      localStorage.modelo = modelo.value;
-      localStorage.ano = ano.value;
-      localStorage.valor = valor.value;
-      localStorage.foto = foto.value;
-      localStorage.cor = cor.value;
-      localStorage.descricao = descricao.value;
-    });
-  }
-  
-  
+  const dados = [
+    localStorage.marca,
+    localStorage.modelo,
+    localStorage.ano,
+    localStorage.valor,
+    localStorage.foto,
+    localStorage.cor,
+    localStorage.descricao
+  ];
+
+  console.log(dados);
+
+}
