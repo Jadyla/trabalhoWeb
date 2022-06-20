@@ -163,6 +163,7 @@ footer{
 .car{
     border-radius: 0 5% 0 5%;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+    width: 450px;
 }
 
 .car:hover{
@@ -218,6 +219,21 @@ footer{
     }
 
     .car{
-        width: 60%;
+        width: 100%;
+    }
+
+    .logo{
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .car{
+        margin-top: 5%;
+    }
+
+    .descricao{
+        margin-left: 5%;
+        margin-right: 5%;
     }
 }

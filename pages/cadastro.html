@@ -37,79 +37,81 @@
         <p style="color:rgb(39, 39, 39);">CADASTRO</p>
       </div>
       <div class="col-3 text-right">
-        <img class="logo" src="../img/royals.png">
+        <img class="logo" src="../img/royals.png" alt="logo da empresa Royals">
       </div>
     </div>
     <hr>
   </section>
-  <form action="" method="" id="formatForm">
 
-    <div class="form-row listFormat">
-      <div class="form-group col-md-5">
-        <label for="inputMarca">Marca:</label>
-        <select id="inputMarca" class="form-control" required>
-          <option selected hidden>-- Selecionar --</option>
-          <option value="Audi">Audi</option>
-          <option value="BMW">BMW</option>
-          <option value="Mercedes">Mercedes Benz</option>
-          <option value="Porsche">Porsche</option>
-          <option value="Genesis">Genesis</option>
-          <option value="Jaguar">Jaguar</option>
-          <option value="Maserati">Maserati</option>
-          <option value="Lexus">Lexus</option>
-          <option value="Volvo">Volvo</option>
-          <option value="Rolls-Royce">Rolls Royce</option>
-          <option value="W-Motors">W Motors</option>
-        </select>
-      </div>
+  <section class="container">
+    <form action="" method="" id="formatForm">
 
-      <div class="form-group col-md-5">
-        <label for="inputModelo">Modelo:</label>
-        <input type="text" id="inputModelo" class="form-control" placeholder="Insira o nome do modelo" required>
-      </div>
+      <div class="form-row listFormat">
+        <div class="form-group col-md-5">
+          <label for="inputMarca">Marca:</label>
+          <select id="inputMarca" class="form-control" required>
+            <option selected hidden>-- Selecionar --</option>
+            <option value="Audi">Audi</option>
+            <option value="BMW">BMW</option>
+            <option value="Mercedes">Mercedes Benz</option>
+            <option value="Porsche">Porsche</option>
+            <option value="Genesis">Genesis</option>
+            <option value="Jaguar">Jaguar</option>
+            <option value="Maserati">Maserati</option>
+            <option value="Lexus">Lexus</option>
+            <option value="Volvo">Volvo</option>
+            <option value="Rolls-Royce">Rolls Royce</option>
+            <option value="W-Motors">W Motors</option>
+          </select>
+        </div>
 
-      <div class="form-group col-md-5">
-        <label for="inputAno">Ano:</label>
-        <input type="number" id="inputAno" class="form-control" min="1900" max="2099" step="1"
-          placeholder="Insira o ano do carro" />
-      </div>
+        <div class="form-group col-md-5">
+          <label for="inputModelo">Modelo:</label>
+          <input type="text" id="inputModelo" class="form-control" placeholder="Insira o nome do modelo" required>
+        </div>
 
-      <div class="form-group col-md-5">
-        <label for="inputValor">Valor:</label>
-        <input type="text" id="inputValor" class="form-control" placeholder="Insira o valor do carro" required>
-      </div>
+        <div class="form-group col-md-5">
+          <label for="inputAno">Ano:</label>
+          <input type="number" id="inputAno" class="form-control" min="1900" max="2099" step="1"
+            placeholder="Insira o ano do carro" />
+        </div>
 
-      <div class="form-group col-md-5">
-        <label for="inputFoto">Foto:</label>
-        <input type="text" id="inputFoto" class="form-control" placeholder="Insira o nome da foto" required>
-      </div>
+        <div class="form-group col-md-5">
+          <label for="inputValor">Valor:</label>
+          <input type="text" id="inputValor" class="form-control" placeholder="Insira o valor do carro" required>
+        </div>
 
-      <div class="form-group col-md-5">
-        <label for="inputCor">Cor:</label>
-        <select id="inputCor" class="form-control" required>
-          <option selected hidden>-- Selecionar --</option>
-          <option value="Vermelho">Vermelho</option>
-          <option value="Laranja">Laranja</option>
-          <option value="Amarelo">Amarelo</option>
-          <option value="Verde">Verde</option>
-          <option value="Azul">Azul</option>
-          <option value="Indigo">Indigo</option>
-          <option value="Violeta">Violeta</option>
-        </select>
-      </div>
+        <div class="form-group col-md-5">
+          <label for="inputFoto">Foto:</label>
+          <input type="text" id="inputFoto" class="form-control" placeholder="Insira o nome da foto" required>
+        </div>
 
-      <div class="form-group col-md-10">
-        <label for="imputDescricao">Descrição</label>
-        <textarea class="form-control" id="imputDescricao" rows="3"></textarea>
-      </div>
+        <div class="form-group col-md-5">
+          <label for="inputCor">Cor:</label>
+          <select id="inputCor" class="form-control" required>
+            <option selected hidden>-- Selecionar --</option>
+            <option value="Vermelho">Vermelho</option>
+            <option value="Laranja">Laranja</option>
+            <option value="Amarelo">Amarelo</option>
+            <option value="Verde">Verde</option>
+            <option value="Azul">Azul</option>
+            <option value="Indigo">Indigo</option>
+            <option value="Violeta">Violeta</option>
+          </select>
+        </div>
 
-      <div class="form-group col-md-10 botoes">
-        <button type="submit" class="btn btn-primary" id="btnCadastro" onclick="validar()">Cadastrar Veículo</button>
-        <button type="reset" class="btn btn-secondary">Limpar</button>
-      </div>
-    </div>  
-  </form>
-  
+        <div class="form-group col-md-10">
+          <label for="imputDescricao">Descrição</label>
+          <textarea class="form-control" id="imputDescricao" rows="3"></textarea>
+        </div>
+
+        <div class="form-group col-md-10 botoes">
+          <button type="submit" class="btn btn-primary" id="btnCadastro" onclick="validar()">Cadastrar Veículo</button>
+          <button type="reset" class="btn btn-secondary">Limpar</button>
+        </div>
+      </div>  
+    </form>
+  </section>
   <script src="../js/index.js"></script>
   
   <footer class="shadow-lg">
