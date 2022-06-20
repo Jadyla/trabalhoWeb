@@ -165,6 +165,15 @@ footer{
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.car:hover{
+    transform: scale(1.02, 1.02);
+    transition-duration: 500ms;
+}
+
+.nome_carro{
+    font-size: 25px;
+}
+
 @media only screen and (max-width: 991px){
     .logo_e_imagens{
         display: inline;
@@ -206,5 +215,9 @@ footer{
 
     .secao1{
         max-width: 5000px;
+    }
+
+    .car{
+        width: 60%;
     }
 }

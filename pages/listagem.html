@@ -44,64 +44,135 @@
   </section>
 
   <!--LISTAGEM DOS CARROS-->
-  <section class="container listagem_carros">
+  <section id="carro1" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/car1.jpg" alt="...">
+          <img class="car" src="../img/listagem_carros/jaguar.jpg" alt="...">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p>Modelo Do Veículo</p>
-        <p> <strong>Marca:</strong> Sei Lá</p>
+        <p class="nome_carro">JAGUAR</p>
+        <p> <strong>Marca:</strong> Jaguar</p>
         <p> <strong>Preço:</strong> R$ 500.000,00</p>
         <p> <strong>Cor :</strong> Cinza</p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         </p>
-        <button type="button" class="btn btn-primary float-right">Editar</button>
-        <button type="button" class="btn btn-success float-right padding-2">Excluir</button>
+       <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+       <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro1')">Excluir</button></a>
+        
       </div>
 
       </div>
     </div> 
   </section>
-  <section class="container listagem_carros">
+
+
+  <section id="carro2" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/car2.jpg" alt="...">
+          <img class="car" src="../img/listagem_carros/lexus.png" alt="...">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p>Modelo Do Veículo</p>
-        <p> <strong>Marca:</strong> Sei Lá</p>
+          <p class="nome_carro">LEXUS</p>
+          <p> <strong>Marca:</strong> Lexus</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+          </p>
+          <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+          <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro2')">Excluir</button></a>
+       
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section id="carro3" class="container listagem_carros">
+    <div class="row">
+      <div class="col-xs-6 col-md-6 cars">
+          <img class="car" src="../img/listagem_carros/BMW.jpg" alt="...">
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="descricao">
+        <p class="nome_carro">BMW</p>
+        <p> <strong>Marca:</strong> BMW</p>
         <p> <strong>Preço:</strong> R$ 500.000,00</p>
         <p> <strong>Cor :</strong> Cinza</p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         </p>
-        <button type="button" class="btn btn-primary float-right">Editar</button>
-        <button type="button" class="btn btn-success float-right padding-2">Excluir</button>
+        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+       <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro3')">Excluir</button></a>
+       
       </div>
-
       </div>
     </div> 
   </section>
-  <section class="container listagem_carros">
+
+  <section id="carro4" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/car1.jpg" alt="...">
+          <img class="car" src="../img/listagem_carros/audi.jpg" alt="...">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p>Modelo Do Veículo</p>
-        <p> <strong>Marca:</strong> Sei Lá</p>
+        <p class="nome_carro">AUDI</p>
+        <p> <strong>Marca:</strong> Audi</p>
         <p> <strong>Preço:</strong> R$ 500.000,00</p>
         <p> <strong>Cor :</strong> Cinza</p>
         <p>
           Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
         </p>
-        <button type="button" class="btn btn-primary float-right">Editar</button>
-        <button type="button" class="btn btn-success float-right padding-2" id="btn_delete">Excluir</button>
+        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro4')">Excluir</button></a>
+      </div>
+      </div>
+    </div> 
+  </section>
+
+
+  <section id="carro5" class="container listagem_carros">
+    <div class="row">
+      <div class="col-xs-6 col-md-6 cars">
+          <img class="car" src="../img/listagem_carros/mercedes.jpg" alt="...">
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="descricao">
+        <p class="nome_carro">MERCEDES</p>
+        <p> <strong>Marca:</strong> Mercedes</p>
+        <p> <strong>Preço:</strong> R$ 500.000,00</p>
+        <p> <strong>Cor :</strong> Cinza</p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro5')">Excluir</button></a>
+      </div>
+      </div>
+    </div> 
+  </section>
+
+  <section id="carro6" class="container listagem_carros">
+    <div class="row">
+      <div class="col-xs-6 col-md-6 cars">
+          <img class="car" src="../img/listagem_carros/porsche.jpg" alt="...">
+      </div>
+      <div class="col-xs-6 col-md-4">
+        <div class="descricao">
+        <p class="nome_carro">PORSCHE</p>
+        <p> <strong>Marca:</strong> Porsche</p>
+        <p> <strong>Preço:</strong> R$ 500.000,00</p>
+        <p> <strong>Cor :</strong> Cinza</p>
+        <p>
+          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+        </p>
+        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
+        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro6')">Excluir</button></a>
+       
       </div>
       </div>
     </div> 
@@ -111,6 +182,7 @@
   <section class="container listagem_carros" id="sectionCars"></section>
 
   <script src="../js/dados.js"></script>
+  <script src="../js/remover.js"></script>
 
   <footer class="shadow-lg">
     Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços de Caldas, MG.

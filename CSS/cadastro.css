@@ -8,6 +8,7 @@
     justify-content: right;
 }
 
-#btnCadastro{
-    margin-right: 10px;
+
+.btn-primary,.btn-dark,.btn-secondary{
+    margin-left: 1em;
 }

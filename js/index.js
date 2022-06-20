@@ -44,3 +44,17 @@ function salvarLocalStorage() {
   console.log(dados);
 
 }
+
+//Validação
+(function () {
+  VMasker(document.getElementById("inputAno")).maskPattern('9999');
+  VMasker(document.getElementById("inputValor")).maskMoney({ unit: 'R$' });
+})();
+
+function validar(){
+  let valor = document.getElementById('inputValor').value;
+  
+  if (parseC(valor) >= 'R$ 10,00'){
+
+  }
+}

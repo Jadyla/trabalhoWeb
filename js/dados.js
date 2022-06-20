@@ -21,6 +21,7 @@ function extraiDadosLocalStorage(){
 
   caminho = caminhoImagem(marca);
   console.log(caminho);
+  let numero = 7;
 
   document.getElementById("sectionCars").innerHTML = `
   <div class="row">
@@ -37,7 +38,7 @@ function extraiDadosLocalStorage(){
           ${descricao}
         </p>
         <button type="button" class="btn btn-primary float-right">Editar</button>
-        <button type="button" class="btn btn-success float-right padding-2" id="btn_delete">Excluir</button>
+        <button type="button" class="btn btn-success float-right padding-2" id="btn_delete" onclick="deletar('carro${numero}')">Excluir</button>
       </div>
       </div>
   </div> 
