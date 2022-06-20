@@ -15,7 +15,7 @@ function editado(){
 }
 
 function editar() {
-  window.location.href = "/pages/edicao.html";
+  window.location.href = "../pages/edicao.html";
 }
 
 function deletar(id) {
