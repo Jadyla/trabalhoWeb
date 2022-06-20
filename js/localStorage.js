@@ -1,5 +1,4 @@
 // Extraindo os dados da LocalStorage
-extraiDadosLocalStorage();
 
 function extraiDadosLocalStorage(){
   
@@ -58,9 +57,6 @@ function extraiDadosLocalStorage(){
   // console.log("Teste02");
 }
 
-
-
-
 function caminhoImagem(marca){
   if (marca == 'Audi'){
     caminho = '../img/listagem_carros/audi.jpg'
@@ -98,3 +94,36 @@ function caminhoImagem(marca){
 
   return caminho;
 }
+
+// Armazenar os dados no LocalStorage
+function salvarLocalStorage() {
+  let marca = document.getElementById('inputMarca');
+  let modelo = document.getElementById('inputModelo');
+  let ano = document.getElementById('inputAno');
+  let valor = document.getElementById('inputValor');
+  let foto = document.getElementById('inputFoto');
+  let cor = document.getElementById('inputCor');
+  let descricao = document.getElementById('imputDescricao');
+
+  document.getElementById('btnCadastro').addEventListener('click', function () {
+    localStorage.marca = marca.value;
+    localStorage.modelo = modelo.value;
+    localStorage.ano = ano.value;
+    localStorage.valor = valor.value;
+    localStorage.foto = foto.value;
+    localStorage.cor = cor.value;
+    localStorage.descricao = descricao.value;
+  });
+  
+  const dados = [
+    localStorage.marca,
+    localStorage.modelo,
+    localStorage.ano,
+    localStorage.valor,
+    localStorage.foto,
+    localStorage.cor,
+    localStorage.descricao
+  ];
+  console.log(dados);
+}
+

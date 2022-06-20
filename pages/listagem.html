@@ -5,9 +5,13 @@
   <meta charset="UTF-8">
   <link rel="icon" type="imagem/png" href="../img/favicon.png" />
   <link rel="stylesheet" type="text/css" href="../CSS/style.css">
+  <link rel="stylesheet" href="../CSS/cars.css">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" href="../CSS/cars.css">
+  <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js"
+    integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+  <script defer src="../js/index.js"></script>
+
   <title>Royals</title>
 </head>
 
@@ -47,31 +51,34 @@
   <section id="carro1" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/jaguar.jpg" alt="imagem de um carro Jaguar">
+        <img class="car" src="../img/listagem_carros/jaguar.jpg" alt="imagem de um carro Jaguar">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p class="nome_carro">JAGUAR</p>
-        <p> <strong>Marca:</strong> Jaguar</p>
-        <p> <strong>Preço:</strong> R$ 500.000,00</p>
-        <p> <strong>Cor :</strong> Cinza</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        </p>
-       <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-       <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro1')">Excluir</button></a>
-        
-      </div>
+          <p class="nome_carro">JAGUAR</p>
+          <p> <strong>Marca:</strong> Jaguar</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro1')">Excluir</button>
+
+        </div>
 
       </div>
-    </div> 
+    </div>
   </section>
 
 
   <section id="carro2" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/lexus.png" alt="imagem de um carro Lexus">
+        <img class="car" src="../img/listagem_carros/lexus.png" alt="imagem de um carro Lexus">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
@@ -80,11 +87,14 @@
           <p> <strong>Preço:</strong> R$ 500.000,00</p>
           <p> <strong>Cor :</strong> Cinza</p>
           <p>
-            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
           </p>
-          <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-          <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro2')">Excluir</button></a>
-       
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro2')">Excluir</button>
+
         </div>
       </div>
     </div>
@@ -94,96 +104,105 @@
   <section id="carro3" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/BMW.jpg" alt="imagem de um carro BMW">
+        <img class="car" src="../img/listagem_carros/BMW.jpg" alt="imagem de um carro BMW">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p class="nome_carro">BMW</p>
-        <p> <strong>Marca:</strong> BMW</p>
-        <p> <strong>Preço:</strong> R$ 500.000,00</p>
-        <p> <strong>Cor :</strong> Cinza</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        </p>
-        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-       <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro3')">Excluir</button></a>
-       
+          <p class="nome_carro">BMW</p>
+          <p> <strong>Marca:</strong> BMW</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro3')">Excluir</button>
+
+        </div>
       </div>
-      </div>
-    </div> 
+    </div>
   </section>
 
   <section id="carro4" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/audi.jpg" alt="imagem de um carro Audi">
+        <img class="car" src="../img/listagem_carros/audi.jpg" alt="imagem de um carro Audi">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p class="nome_carro">AUDI</p>
-        <p> <strong>Marca:</strong> Audi</p>
-        <p> <strong>Preço:</strong> R$ 500.000,00</p>
-        <p> <strong>Cor :</strong> Cinza</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        </p>
-        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro4')">Excluir</button></a>
+          <p class="nome_carro">AUDI</p>
+          <p> <strong>Marca:</strong> Audi</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro4')">Excluir</button>
+
+        </div>
       </div>
-      </div>
-    </div> 
+    </div>
   </section>
 
 
   <section id="carro5" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/mercedes.jpg" alt="imagem de um carro Mercedes">
+        <img class="car" src="../img/listagem_carros/mercedes.jpg" alt="imagem de um carro Mercedes">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p class="nome_carro">MERCEDES</p>
-        <p> <strong>Marca:</strong> Mercedes</p>
-        <p> <strong>Preço:</strong> R$ 500.000,00</p>
-        <p> <strong>Cor :</strong> Cinza</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        </p>
-        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro5')">Excluir</button></a>
+          <p class="nome_carro">MERCEDES</p>
+          <p> <strong>Marca:</strong> Mercedes</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro5')">Excluir</button>
+
+        </div>
       </div>
-      </div>
-    </div> 
+    </div>
   </section>
 
   <section id="carro6" class="container listagem_carros">
     <div class="row">
       <div class="col-xs-6 col-md-6 cars">
-          <img class="car" src="../img/listagem_carros/porsche.jpg" alt="imagem de um carro Porsche">
+        <img class="car" src="../img/listagem_carros/porsche.jpg" alt="imagem de um carro Porsche">
       </div>
       <div class="col-xs-6 col-md-4">
         <div class="descricao">
-        <p class="nome_carro">PORSCHE</p>
-        <p> <strong>Marca:</strong> Porsche</p>
-        <p> <strong>Preço:</strong> R$ 500.000,00</p>
-        <p> <strong>Cor :</strong> Cinza</p>
-        <p>
-          Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. 
-        </p>
-        <a class="d-inline w-100" href="./edicao.html"><button type="button" class="btn btn-primary float-left -inline w-100">Editar</button></a>
-        <a class="d-inline w-100" href=""><button type="button" class="btn btn-success float-left padding-2 -inline w-100" id="btn_delete" onclick="deletar('carro6')">Excluir</button></a>
-       
+          <p class="nome_carro">PORSCHE</p>
+          <p> <strong>Marca:</strong> Porsche</p>
+          <p> <strong>Preço:</strong> R$ 500.000,00</p>
+          <p> <strong>Cor :</strong> Cinza</p>
+          <p>
+            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+            industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and
+            scrambled it to make a type specimen book.
+          </p>
+          <button type="button" class="btn btn-primary float-left" onclick="editar()">Editar</button>
+          <button type="button" class="btn btn-success float-left padding-2" id="btn_delete"
+            onclick="deletar('carro6')">Excluir</button>
+        </div>
       </div>
-      </div>
-    </div> 
+    </div>
   </section>
 
   <!-- Aqui onde começa a listagem depois do cadastro dos dados -->
   <section class="container listagem_carros" id="sectionCars"></section>
-
-  <script src="../js/dados.js"></script>
-  <script src="../js/remover.js"></script>
-
   <footer class="shadow-lg">
     Instituto Federal do Sul de Minas Gerais - IFSULDEMINAS | Campus Poços de Caldas, MG.
   </footer>
